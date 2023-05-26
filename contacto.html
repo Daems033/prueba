@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="js/index.js"></script>
+</head>
+<body>
+    <header role="banner">
+        <div class="container-header-perfil">
+            <div>
+                <img id="logo" src="imagenes/logo.PNG" alt="logoCanva" aria-label="logo de la pagina">
+            </div>
+            <div class="container-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="recompensas.html">Recompensas</a></li>
+                    <li><a href="cheques.html">Juego</a></li>
+                    <li><a href="perfil.html">Perfil</a></li>
+                    <li>
+                        <form action="#" method="post">
+                            <select name="lang" id="idioma">
+                                <option selected value="es">Español</option>
+                                <option value="en">Ingles</option>
+                            </select>
+                            <button type="submit">Cambiar</button>
+                        </form>
+                    </li>
+                </ul>
+            </div>  
+        </div>
+    </header>
+    <main>
+        <section>
+            <h1 id="titulo-h1">¡Bienvenido a Contacto!</h1>
+            <article id="flex-article">
+                <div id="informacion">
+                    <h2 class="tamanyo">Información:</h2>
+                    <img src="imagenes/direccion.png" alt="Dirección"><div style="width: 11.6em;">Dirección: 2 133rd St, Queens, NY 11419, EE. UU.</div>
+                    <img src="imagenes/email.png" alt="Email"><div>Email: contact@bicomart.com</div>
+                    <img src="imagenes/telefono.png" alt="Telefono"><div>Telefono: (+084)123.456.789</div>
+                    <img src="imagenes/horario.png" alt="Horario"><div>Horario: 08:00 - 19:00</div>
+                </div>
+                <div>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3025.0255798017083!2d-73.82020987244739!3d40.69543428047777!2m3!1f0!2f0!3f0!3m2!
+                    1i1024!2i768!4f13.1!3m3!1m2!1s0x89c260ca35f2feab%3A0x91ef2348748d76d4!2s2%20133rd%20St%2C%20Queens%2C%20NY%2011419%2C%20EE.%20UU.!5e0!3m2!1ses!2ses!4v1665410
+                    811898!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </article>
+        </section>
+        <section>
+            <h2 id="titulo-contacto">Contacto:</h2>
+            <article id="flex-article-2">
+                <div id="informacion-2">
+                    <h2 class="tamanyo">Datos:</h2>
+                    <form action="#">
+                        <span>Categoria:</span>
+                        <select name="categoriaContacto" id="categoriaConsulta">
+                            <option selected value="ej1">Ejemplo 1</option>
+                            <option value="ej2">Ejemplo 2</option>
+                        </select>
+                        <span>Nombre Completo:</span>
+                        <input type="text" placeholder="Juan Lozano Torres" required>
+                        <span>Email:</span>
+                        <input type="email" placeholder="1234@gmail.com" required>
+                        <span>Concepto:</span>
+                        <input type="text" placeholder="Asunto" required>
+                        <span>Contenido:</span>
+                        <textarea title="" cols="50" rows="5" placeholder="Escriba la razón"></textarea>
+                        <input id="submit-contacto" type="submit" value="Enviar">
+                    </form>
+                </div>
+                <div id="redes">
+                    <div>
+                      <a href="#"><img src="imagenes/twitter.png" alt="Icono Twitter"></a>
+                      <span>Twitter</span>
+                    </div>
+                    <div>
+                        <a href="#"><img src="imagenes/facebook.png" alt="Icono Facebook"></a>
+                      <span>Facebook</span>
+                    </div>
+                    <div>
+                        <a href="#"><img src="imagenes/instagram.png" alt="Icono Instagram"></a>
+                      <span>Instagram</span>
+                    </div>
+                    <div>
+                        <a href="#"><img src="imagenes/youtube.jpg" alt="Icono Youtube"></a>
+                      <span>Youtube</span>
+                    </div>
+                  </div>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <section>
+            <div class="container-footer-navs">
+                <div class="block-footer">
+                    <div>
+                        <img src="imagenes/logo.PNG" alt="Logo" style="width: 11em;">
+                    </div>
+                    <img src="imagenes/direccion.png" alt="Icono Direccion">
+                    <div>Dirección: 2 133rd St, Queens, NY 11419, EE. UU.</div>
+                    <img src="imagenes/telefono.png" alt="Icono Telefono">
+                    <div>Telefono: (+084)123.456.789</div>
+                    <img src="imagenes/email.png" alt="Icono Email">
+                    <div>Email: contact@bicomart.com</div>
+                </div>
+                <div class="footer-nav">
+                    <ul>
+                        <li class="margin-footer"><a href="contacto.html" id="contactoFooter">Atención al cliente</a></li>
+                    </ul>
+                    <ul>
+                        <li class="margin-footer">Conecta con nosotros</li>
+                    </ul>
+                    <ul>
+                        <li class="color-footer"><img src="imagenes/twitterFooter.png" alt="Twitter"></li>
+                        <li class="color-footer"><img src="imagenes/facebookFooter.png" alt="Facebook"></li>
+                        <li class="color-footer"><img src="imagenes/instagramFooter.png" alt="Instagram"></li>
+                        <li class="color-footer"><img src="imagenes/youtubeFooter.png" alt="Youtube"></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <div id="linea-footer"></div>
+        <section>
+            <div>
+                <div class="negritaPDF"><span><img src="imagenes/pdf.png" alt="Icono PDF" class="iconoPDF"></span>Política de privacidad</div>
+                <div class="negritaPDF"><span><img src="imagenes/pdf.png" alt="Icono PDF" class="iconoPDF"></span>Condiciones de uso</div>
+                <div class="negritaPDF"><span><img src="imagenes/pdf.png" alt="Icono PDF" class="iconoPDF"></span>Términos y condiciones generales de transporte</div>
+            </div>
+            <div id="copy-target">
+                <img src="imagenes/Selección_071.png" alt="Iconos Metodos de pago">
+                <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/"><img src="imagenes/copy.png" alt="Copyright"></a>
+            </div>
+        </section>
+        <div id="copy">
+            <div>Copyright &copy; 2020 <span style="color: #8C3F00 !important;"> ekommart</span>.All Rights Reserved</div>
+            <div>
+                <svg width="20" height="30">
+                    <line x1="0.5mm" y1="0mm" x2="0.5mm" y2="8mm" stroke="black" stroke-width="3" />
+                    <ellipse cx="1" cy="16" rx="15" ry="15" fill="none" stroke="black" stroke-width="3" />
+                </svg>
+            
+                <svg width="20" height="30">
+                    <ellipse cx="15" cy="15" rx="10" ry="15" fill="none" stroke="black" stroke-width="3" />
+                    <line x1="18" y1="16" x2="19" y2="26mm" stroke="black" stroke-width="3" />
+                </svg>
+            </div>
+        </div>
+        <div class="banner-cookies">
+            <div>
+              <p>Utilizamos cookies para mejorar tu experiencia de usuario. Si continúas navegando entendemos que aceptas las condiciones.</p>
+              <button class="aceptar-cookies">Aceptar</button>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

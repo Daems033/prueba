@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi perfil</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="js/index.js"></script>
+</head>
+<body>
+    <header role="banner">
+        <div class="container-header-perfil">
+            <div>
+                <img id="logo" src="imagenes/logo.PNG" alt="logoCanva" aria-label="logo de la pagina">
+            </div>
+            <div class="container-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="recompensas.html">Recompensas</a></li>
+                    <li><a href="cheques.html">Juego</a></li>
+                    <li><a href="perfil.html">Perfil</a></li>
+                    <li>
+                        <form action="#" method="post">
+                            <select name="lang" id="idioma">
+                                <option selected value="es">Español</option>
+                                <option value="en">Ingles</option>
+                            </select>
+                            <button type="submit">Cambiar</button>
+                        </form>
+                    </li>
+                </ul>
+            </div>  
+        </div>
+
+        <dialog id="nombreApellidosDialog">
+            <span class="btn-cerrar-nombreApellidos"><img src="imagenes/cruzado.png" alt=""></span>
+            <div class="ventanaRegistro">
+                <div class="textoRegistro">
+                    <h2><span>Cambio</span> de nombre y apellidos</h2>
+                    <p>Hazlo más sencillo</p>
+                </div>
+                <form action="#" method="post" class="formRegistro">
+                    <div class="form-group">
+                    <label for="antiguaContrasena">Nombre:</label>
+                    <input type="text" id="nombreCambio" name="nombreCambio" placeholder="Sergi" required>
+                    </div>
+                    <div class="form-group">
+                    <label for="nuevaContrasena">Primer apellido:</label>
+                    <input type="text" id="primerApellidoCambio" name="primerApellidoCambio" placeholder="Alba" required>
+                    </div>
+                    <div class="form-group">
+                    <label for="repetirContrasena">Segundo apellido:</label>
+                    <input type="text" id="segundoApellidoCambio" name="segundoApellidoCambio" placeholder="Delgado" required>
+                    </div>
+                    <button type="submit" class="btn-submit">Cambiar credenciales</button>
+                </form>
+            </div>
+        </dialog>
+
+        <dialog id="fechaNacimientoDialog">
+            <span class="btn-cerrar-fechaNacimiento"><img src="imagenes/cruzado.png" alt=""></span>
+            <div class="ventanaRegistro">
+                <div class="textoRegistro">
+                    <h2><span>Cambio</span> de fecha nacimiento</h2>
+                    <p>Hazlo más sencillo</p>
+                </div>
+                <form action="#" method="post" class="formRegistro">
+                    <div class="form-group">
+                    <label for="fechaNacimientoNueva">Nueva fecha de nacimiento:</label>
+                    <input type="date" id="fechaNacimientoNueva" name="fechaNacimientoNueva" required>
+                    </div>
+                    <button type="submit" class="btn-submit">Cambiar fecha</button>
+                </form>
+            </div>
+        </dialog>
+
+        <dialog id="contrasenaDialog">
+            <span class="btn-cerrar-contrasena"><img src="imagenes/cruzado.png" alt=""></span>
+            <div class="ventanaRegistro">
+                <div class="textoRegistro">
+                    <h2><span>Cambio</span> de contraseñas</h2>
+                    <p>Hazlo más sencillo</p>
+                </div>
+                <form action="#" method="post" class="formRegistro">
+                    <div class="form-group">
+                    <label for="antiguaContrasena">Antigua contraseña:</label>
+                    <input type="password" id="antiguaContrasena" name="antiguaContrasena" placeholder="************" required>
+                    </div>
+                    <div class="form-group">
+                    <label for="nuevaContrasena">Nueva contraseña:</label>
+                    <input type="password" id="nuevaContrasena" name="nuevaContrasena" placeholder="************" required>
+                    </div>
+                    <div class="form-group">
+                    <label for="repetirContrasena">Repetir contraseña:</label>
+                    <input type="password" id="repetirContrasena" name="repetirContrasena" placeholder="************" required>
+                    </div>
+                    <button type="submit" class="btn-submit">Cambiar contraseña</button>
+                </form>
+            </div>
+        </dialog>
+
+        <dialog id="nuevoSaldoDialog">
+            <span class="btn-cerrar-nuevoSaldo"><img src="imagenes/cruzado.png" alt=""></span>
+            <div class="ventanaRegistro">
+                <div class="textoRegistro">
+                    <h2><span>Ventana</span> para añadir saldo</h2>
+                    <p>Hazlo más sencillo</p>
+                </div>
+                <form action="#" method="post" class="formRegistro">
+                    <div class="form-group">
+                        <label for="numeroTarjeta">Número de tarjeta:</label>
+                        <input type="number" id="numeroTarjeta" name="numeroTarjeta" placeholder="XXXX XXXX XXXX XXXX" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="fechaCaducidadTarjeta">Fecha de caducidad:</label>
+                        <input type="date" id="fechaCaducidadTarjeta" name="fechaCaducidadTarjeta" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="cvv">CVV:</label>
+                        <input type="number" id="cvv" name="cvv" placeholder="983" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="titularTarjeta">Titular:</label>
+                        <input type="text" id="titularTarjeta" name="titularTarjeta" placeholder="Jose Eduardo Heredia" required>
+                    </div>
+                    <button type="submit" class="btn-submit">Añadir Saldo</button>
+                </form>
+            </div>
+        </dialog>
+    </header>
+    <main>
+        <div class="contenedor">
+            <div class="campoPerfil">
+                <div class="tituloPerfil">Datos personales</div>
+                <div class="datoPerfil">Esta información se utilizará para rellenar automáticamente tus datos personales con el fin de que 
+                puedas hacer más rápido la reserva y para mantenerte informado.</div>
+                <img src="imagenes/profile_picture_user_icon_153847.png" alt="Foto Perfil" id="fotoPerfil">
+            </div>
+            <div class="campo">
+                <div class="titulo">Nombre y apellidos:</div>
+                <div class="dato">Damian Gil López</div>
+                <img src="imagenes/lapiz.png" alt="Icono Editar" class="icono-boton">
+                <a href="#" class="enlaces-perfil btn-abrir-nombreApellidos">Editar</a>
+            </div>
+            <div class="campo">
+                <div class="titulo">Correo:</div>
+                <div class="dato">ejemplo@example.com</div>
+            </div>
+            <div class="campo">
+                <div class="titulo">Fecha de nacimiento:</div>
+                <div class="dato">01/01/1990</div>
+                <img src="imagenes/lapiz.png" alt="Icono Editar" class="icono-boton">
+                <a href="#" class="enlaces-perfil btn-abrir-fechaNacimiento">Editar</a>
+            </div>
+            <div class="campo">
+                <div class="titulo">Contraseña:</div>
+                <div class="dato">********</div>
+                <img src="imagenes/lapiz.png" alt="Icono Editar" class="icono-boton">
+                <a href="#" class="enlaces-perfil btn-abrir-contrasena">Editar</a>
+            </div>
+            <div class="campo">
+                <div class="titulo">Saldo:</div>
+                <div class="dato">$100.00</div>
+                <img src="imagenes/lapiz.png" alt="Icono Editar" class="icono-boton">
+                <a href="#" class="enlaces-perfil btn-abrir-nuevoSaldo">Editar</a>
+            </div>
+            <div class="campo">
+                <div class="titulo">Puntos de recompensa:</div>
+                <div class="dato">500</div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <section>
+            <div class="container-footer-navs">
+                <div class="block-footer">
+                    <div>
+                        <img src="imagenes/logo.PNG" alt="Logo" style="width: 11em;">
+                    </div>
+                    <img src="imagenes/direccion.png" alt="Icono Direccion">
+                    <div>Dirección: 2 133rd St, Queens, NY 11419, EE. UU.</div>
+                    <img src="imagenes/telefono.png" alt="Icono Telefono">
+                    <div>Telefono: (+084)123.456.789</div>
+                    <img src="imagenes/email.png" alt="Icono Email">
+                    <div>Email: contact@bicomart.com</div>
+                </div>
+                <div class="footer-nav">
+                    <ul>
+                        <li class="margin-footer"><a href="contacto.html" id="contactoFooter">Atención al cliente</a></li>
+                    </ul>
+                    <ul>
+                        <li class="margin-footer">Conecta con nosotros</li>
+                    </ul>
+                    <ul>
+                        <li class="color-footer"><img src="imagenes/twitterFooter.png" alt="Twitter"></li>
+                        <li class="color-footer"><img src="imagenes/facebookFooter.png" alt="Facebook"></li>
+                        <li class="color-footer"><img src="imagenes/instagramFooter.png" alt="Instagram"></li>
+                        <li class="color-footer"><img src="imagenes/youtubeFooter.png" alt="Youtube"></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <div id="linea-footer"></div>
+        <section>
+            <div>
+                <div class="negritaPDF"><span><img src="imagenes/pdf.png" alt="Icono PDF" class="iconoPDF"></span>Política de privacidad</div>
+                <div class="negritaPDF"><span><img src="imagenes/pdf.png" alt="Icono PDF" class="iconoPDF"></span>Condiciones de uso</div>
+                <div class="negritaPDF"><span><img src="imagenes/pdf.png" alt="Icono PDF" class="iconoPDF"></span>Términos y condiciones generales de transporte</div>
+            </div>
+            <div id="copy-target">
+                <img src="imagenes/Selección_071.png" alt="Iconos Metodos de pago">
+                <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/"><img src="imagenes/copy.png" alt="Copyright"></a>
+            </div>
+        </section>
+        <div id="copy">
+            <div>Copyright &copy; 2020 <span style="color: #8C3F00 !important;"> ekommart</span>.All Rights Reserved</div>
+            <div>
+                <svg width="20" height="30">
+                    <line x1="0.5mm" y1="0mm" x2="0.5mm" y2="8mm" stroke="black" stroke-width="3" />
+                    <ellipse cx="1" cy="16" rx="15" ry="15" fill="none" stroke="black" stroke-width="3" />
+                </svg>
+            
+                <svg width="20" height="30">
+                    <ellipse cx="15" cy="15" rx="10" ry="15" fill="none" stroke="black" stroke-width="3" />
+                    <line x1="18" y1="16" x2="19" y2="26mm" stroke="black" stroke-width="3" />
+                </svg>
+            </div>
+        </div>
+        <div class="banner-cookies">
+            <div>
+              <p>Utilizamos cookies para mejorar tu experiencia de usuario. Si continúas navegando entendemos que aceptas las condiciones.</p>
+              <button class="aceptar-cookies">Aceptar</button>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
